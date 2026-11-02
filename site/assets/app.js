@@ -21,10 +21,6 @@
   var sections = [];
 
   /* ---------- Hilfen ---------- */
-  function store(key, value) {
-    try { if (value === undefined) return window.localStorage.getItem(key); window.localStorage.setItem(key, value); } catch (e) { return null; }
-    return null;
-  }
   function ui(key) { return (K.ui[lang] && K.ui[lang][key]) || K.ui.de[key] || ""; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
@@ -195,7 +191,6 @@
   function setLang(l, silent) {
     if (l !== "de" && l !== "en") return;
     lang = l;
-    store("kairos-lang", l);
     try {
       var u = new URL(window.location.href);
       u.searchParams.set("lang", l);
@@ -378,11 +373,10 @@
   });
 
   /* ---------- Start ---------- */
+  /* Startsprache ist immer Deutsch. Englisch nur über den Umschalter oder einen Link mit ?lang=en. */
   var param = null;
   try { param = new URL(window.location.href).searchParams.get("lang"); } catch (e) { /* alt */ }
-  var saved = store("kairos-lang");
-  var initial = param || saved || ((navigator.language || "de").toLowerCase().indexOf("de") === 0 ? "de" : "en");
-  setLang(initial === "en" ? "en" : "de", true);
+  setLang(param === "en" ? "en" : "de", true);
   if (window.matchMedia("(max-width: 960px)").matches) voice.setAttribute("data-collapsed", "false");
   render();
   if (window.location.hash) {
