@@ -1,0 +1,16 @@
+{
+  "name": "kairos-ai-campus",
+  "private": true,
+  "type": "module",
+  "description": "KAIROS AI Campus – zweisprachige Präsentationsseite zu Claude (Vercel). Statische Seite in site/, Bilder entstehen beim Build.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "sharp": "^0.34.1"
+  }
+}

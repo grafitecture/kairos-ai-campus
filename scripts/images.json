@@ -1,0 +1,18 @@
+{
+  "_hinweis": "Quellbilder (Higgsfield, KI-generiert). Beim Build auf Vercel geladen und nach site/assets/img/<name>-800.webp und -1600.webp umgewandelt.",
+  "images": {
+    "jens-portrait": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122550_62e09244-1943-475a-9cfa-449d487731a6.png",
+    "title": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122549_d134a2e3-ef3c-4516-967c-4703a4623d78.png",
+    "intro": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122701_8685d8aa-b9c0-435b-b835-bdfeeb62aa6f.png",
+    "usecases": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122705_82e04fa0-8118-44f4-beb9-dd1ebfff77ad.png",
+    "dataprotection": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122659_8d872809-8359-4ddb-8e1a-45dcddf3509b.png",
+    "residency": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_124758_2fc9d073-e588-41fa-b2f9-3e7529178be0.png",
+    "security": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_124755_c6393b63-4392-4c23-a94a-d8adbfd18174.png",
+    "responsible": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_124806_76717c1a-9bd7-4bbb-977a-7e749f845540.png",
+    "handson": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_122706_088cab7d-c85d-47e6-8338-27857156d893.png",
+    "governance": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_125957_33904cd6-eb05-4944-825a-e46ee5b7f89f.png",
+    "future": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_125957_19d1cf40-e158-493c-aec9-7104326e1720.png",
+    "qa": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_125957_09830635-f75b-4f7c-b965-2333f83fcbd8.png",
+    "jens-speech": "https://d8j0ntlcm91z4.cloudfront.net/user_3JVBPQVnOwXZToibtI7vAG7wsQF/hf_20261102_130007_1d660045-7664-44ac-9374-3125bc2bb506.png"
+  }
+}
