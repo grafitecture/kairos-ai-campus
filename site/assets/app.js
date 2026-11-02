@@ -140,7 +140,8 @@
     },
     closing: function (c, s) {
       var body = '<div class="stack">' + head(c) + '<ul class="closing-list">' + c.list.map(function (x) { return "<li>" + rich(x) + "</li>"; }).join("") + "</ul></div>" +
-        (c.note ? '<p class="footer-note">' + c.note + "</p>" : "");
+        (c.note ? '<p class="footer-note">' + c.note + "</p>" : "") +
+        (window.KAIROS_CREDIT ? (window.KAIROS_CREDIT[lang] || window.KAIROS_CREDIT.en) : "");
       if (s.img) return '<div class="split"><div>' + body + "</div>" + pic(s.img, L(s.alt), "pic--wide") + "</div>";
       return body;
     }

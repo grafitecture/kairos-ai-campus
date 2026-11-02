@@ -18,6 +18,7 @@ Inhaltliche Grundlage ist das Statement of Work „Claude Platform Training, Gov
 | `site/assets/fonts/` | Source Sans 3 und Source Serif 4 (SIL Open Font License) |
 | `scripts/images.json` | Quellbilder (KI-generiert mit Higgsfield) |
 | `scripts/build.mjs` | Lädt die Bilder beim Build und erzeugt WebP in 800 und 1600 px |
+| `kit/grafitecture-credit/` | Grafitecture-Feld (Kit v1.2), steht auf der letzten Folie; CSS als letzter Abschnitt in `site.css`, Schnipsel DE/EN in `site/assets/grafitecture-credit.js` (erzeugt mit `python3 scripts/credit.py`) |
 
 ## Inhalte ändern
 
