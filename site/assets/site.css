@@ -26,6 +26,7 @@
 
 :root {
   --nebel: #e6eef2;        /* KAIROS Seitengrund */
+  --nebel-tief: #d2dee6;   /* Kopfzeile, eine Stufe dunkler */
   --papier: #ffffff;
   --facette: #c7d4ed;      /* untere Logo-Facette */
   --facette-hell: #e5edf1; /* obere Logo-Facette */
@@ -100,14 +101,15 @@ a:hover { color: var(--schiefer); }
   height: var(--bar);
   display: flex; align-items: center; gap: 1.5rem;
   padding: 0 var(--pad);
-  background: color-mix(in srgb, var(--nebel) 90%, transparent);
+  background: color-mix(in srgb, var(--nebel-tief) 94%, transparent);
   backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(90, 89, 88, .1);
   transition: right .7s var(--ease), background .4s;
 }
-.at-prolog .topbar { right: 0; background: transparent; backdrop-filter: none; }
+.at-prolog .topbar { right: 0; background: transparent; backdrop-filter: none; border-color: transparent; }
 .topbar__logo { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--schiefer); flex: none; }
 .topbar__logo img { height: 2.1rem; width: auto; }
-.topbar__campus { font-weight: 300; font-size: 1.2rem; letter-spacing: .02em; padding-left: .7rem; border-left: 1px solid var(--linie); line-height: 1.6rem; }
+.topbar__campus { font-weight: 300; font-size: 1.2rem; letter-spacing: .02em; padding-left: .7rem; border-left: 1px solid rgba(90, 89, 88, .3); line-height: 1.6rem; }
 .at-prolog .topbar__logo { color: var(--stimme-text); }
 .at-prolog .topbar__logo img { filter: brightness(0) invert(1); opacity: .92; }
 .at-prolog .topbar__campus { border-color: rgba(255,255,255,.35); }
