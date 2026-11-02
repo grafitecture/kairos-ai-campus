@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>KAIROS AI Campus – Claude verstehen und sicher nutzen</title>
-  <meta name="description" content="KAIROS AI Campus: Workshop zu Claude – Möglichkeiten, Grenzen, Datenschutz, Sicherheit und Governance. Deutsch und Englisch.">
+  <title>KAIROS AI Campus – Understanding and using Claude safely</title>
+  <meta name="description" content="KAIROS AI Campus: a workshop on Claude – capabilities, limits, data protection, security and governance. English and German.">
   <link rel="icon" type="image/png" href="assets/brand/favicon-64.png">
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/source-sans-3-vf.woff2" as="font" type="font/woff2" crossorigin>
@@ -16,34 +16,34 @@
   <script src="assets/app.js" defer></script>
 </head>
 <body class="at-prolog">
-  <a class="skip" href="#deck" data-i18n="skip">Zum Inhalt springen</a>
+  <a class="skip" href="#deck" data-i18n="skip">Skip to content</a>
 
   <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
 
   <header class="topbar">
-    <a class="topbar__logo" href="#prolog" aria-label="KAIROS AI Campus – zum Anfang">
+    <a class="topbar__logo" href="#prolog" aria-label="KAIROS AI Campus – back to start">
       <img src="assets/brand/kairos-logo.png" width="412" height="122" alt="KAIROS">
       <span class="topbar__campus">AI Campus</span>
     </a>
     <p class="topbar__chapter" aria-live="polite"></p>
-    <nav class="topbar__tools" aria-label="Werkzeuge">
-      <button type="button" class="tool" data-action="overview" aria-haspopup="dialog"><span data-i18n="overview">Übersicht</span></button>
+    <nav class="topbar__tools" aria-label="Tools">
+      <button type="button" class="tool" data-action="overview" aria-haspopup="dialog"><span data-i18n="overview">Overview</span></button>
       <div class="lang" role="group" aria-label="Sprache / Language">
-        <button type="button" class="lang__btn" data-lang="de" aria-pressed="true">DE</button>
-        <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang__btn" data-lang="de" aria-pressed="false">DE</button>
       </div>
-      <button type="button" class="tool tool--icon" data-action="fullscreen" aria-label="Vollbild">
+      <button type="button" class="tool tool--icon" data-action="fullscreen" aria-label="Full screen">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
       </button>
     </nav>
   </header>
 
   <main id="deck" class="deck" tabindex="-1">
-    <noscript><p class="noscript">Diese Präsentation braucht JavaScript. / This presentation needs JavaScript.</p></noscript>
+    <noscript><p class="noscript">This presentation needs JavaScript. / Diese Präsentation braucht JavaScript.</p></noscript>
   </main>
 
   <aside class="voice" aria-label="Jens Sattler">
-    <button type="button" class="voice__toggle" aria-expanded="true" data-i18n-label="voiceToggle" aria-label="Jens Sattler ein- oder ausklappen">
+    <button type="button" class="voice__toggle" aria-expanded="true" data-i18n-label="voiceToggle" aria-label="Show or hide Jens Sattler’s panel">
       <span class="voice__portrait"><img src="assets/img/jens-portrait-800.webp" alt="" width="800" height="800"></span>
       <span class="voice__name">Jens Sattler</span>
     </button>
@@ -52,27 +52,27 @@
       <figcaption class="voice__meta"></figcaption>
     </figure>
     <div class="voice__nav">
-      <button type="button" class="voice__step" data-action="prev" aria-label="Vorherige Folie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" class="voice__step" data-action="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
       <span class="voice__count"></span>
-      <button type="button" class="voice__step" data-action="next" aria-label="Nächste Folie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button type="button" class="voice__step" data-action="next" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
   </aside>
 
   <dialog class="sheet" id="deep" aria-labelledby="deep-title">
     <div class="sheet__inner">
-      <p class="sheet__kicker" data-i18n="deepKicker">Vertiefung</p>
+      <p class="sheet__kicker" data-i18n="deepKicker">Deep dive</p>
       <h2 class="sheet__title" id="deep-title"></h2>
       <div class="sheet__body"></div>
-      <button type="button" class="sheet__close" data-action="close"><span data-i18n="close">Schließen</span></button>
+      <button type="button" class="sheet__close" data-action="close"><span data-i18n="close">Close</span></button>
     </div>
   </dialog>
 
   <dialog class="sheet sheet--overview" id="overview" aria-labelledby="overview-title">
     <div class="sheet__inner">
-      <h2 class="sheet__title" id="overview-title" data-i18n="overview">Übersicht</h2>
+      <h2 class="sheet__title" id="overview-title" data-i18n="overview">Overview</h2>
       <ol class="overview"></ol>
-      <p class="overview__keys" data-i18n="keys">Tasten: ↓ / → weiter, ↑ / ← zurück, O Übersicht, F Vollbild, E/D Sprache.</p>
-      <button type="button" class="sheet__close" data-action="close"><span data-i18n="close">Schließen</span></button>
+      <p class="overview__keys" data-i18n="keys">Keys: ↓ or → next, ↑ or ← back, O overview, F full screen, D German, E English.</p>
+      <button type="button" class="sheet__close" data-action="close"><span data-i18n="close">Close</span></button>
     </div>
   </dialog>
 

@@ -1,6 +1,6 @@
 # KAIROS AI Campus
 
-Zweisprachige Präsentationsseite (Deutsch/Englisch) für den Workshop „Claude verstehen und sicher nutzen“. Gestaltung nach [kairos-mannheim.de](https://kairos-mannheim.de), Umsetzung: Grafitecture.
+Zweisprachige Präsentationsseite (Englisch/Deutsch) für den Workshop „Claude verstehen und sicher nutzen“. Gestaltung nach [kairos-mannheim.de](https://kairos-mannheim.de), Umsetzung: Grafitecture.
 
 Inhaltliche Grundlage ist das Statement of Work „Claude Platform Training, Governance and Safe Usage Workshop“ (Agenda, Erfolgskriterien, zehn Pflichtfragen). Faktenstand: 2. November 2026.
 
@@ -29,7 +29,7 @@ Inhaltliche Grundlage ist das Statement of Work „Claude Platform Training, Gov
 
 ## Bedienung
 
-Pfeiltasten oder Bild-auf/ab blättern, `O` Übersicht, `F` Vollbild, `D`/`E` Sprache. Direktlinks: `/?lang=en#k4-wege`. Auf schmalen Bildschirmen wird das Feld von Jens Sattler unten angedockt.
+Die Seite öffnet immer auf Englisch; Deutsch über den Umschalter oder einen Link mit `?lang=de`. Pfeiltasten oder Bild-auf/ab blättern, `O` Übersicht, `F` Vollbild, `D`/`E` Sprache. Direktlinks: `/?lang=de#k4-wege`. Auf schmalen Bildschirmen wird das Feld von Jens Sattler unten angedockt.
 
 ## Webseite
 

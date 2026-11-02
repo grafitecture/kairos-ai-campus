@@ -16,7 +16,7 @@
   var deepDialog = document.getElementById("deep");
   var overviewDialog = document.getElementById("overview");
 
-  var lang = "de";
+  var lang = "en";
   var current = -1;
   var sections = [];
 
@@ -373,10 +373,10 @@
   });
 
   /* ---------- Start ---------- */
-  /* Startsprache ist immer Deutsch. Englisch nur über den Umschalter oder einen Link mit ?lang=en. */
+  /* Startsprache ist immer Englisch. Deutsch nur über den Umschalter oder einen Link mit ?lang=de. */
   var param = null;
   try { param = new URL(window.location.href).searchParams.get("lang"); } catch (e) { /* alt */ }
-  setLang(param === "en" ? "en" : "de", true);
+  setLang(param === "de" ? "de" : "en", true);
   if (window.matchMedia("(max-width: 960px)").matches) voice.setAttribute("data-collapsed", "false");
   render();
   if (window.location.hash) {
