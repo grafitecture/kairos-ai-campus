@@ -184,6 +184,7 @@
     document.querySelector(".topbar__tools").setAttribute("aria-label", ui("tools"));
     document.querySelector(".topbar__logo").setAttribute("aria-label", ui("home"));
     document.title = ui("docTitle");
+    document.querySelector(".overview__logout a").setAttribute("href", "/abmelden" + (lang === "de" ? "?lang=de" : ""));
     Array.prototype.forEach.call(document.querySelectorAll(".lang__btn"), function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang));
     });

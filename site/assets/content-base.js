@@ -17,6 +17,7 @@ window.KAIROS = {
       home: "KAIROS AI Campus – zum Anfang",
       voiceToggle: "Feld von Jens Sattler ein- oder ausklappen",
       keys: "Tasten: ↓ oder → weiter, ↑ oder ← zurück, O Übersicht, F Vollbild, D Deutsch, E Englisch.",
+      logout: "Abmelden",
       chapters: [
         "Prolog",
         "Einführung",
@@ -48,6 +49,7 @@ window.KAIROS = {
       home: "KAIROS AI Campus – back to start",
       voiceToggle: "Show or hide Jens Sattler’s panel",
       keys: "Keys: ↓ or → next, ↑ or ← back, O overview, F full screen, D German, E English.",
+      logout: "Sign out",
       chapters: [
         "Prologue",
         "Introduction",

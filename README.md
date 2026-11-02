@@ -17,6 +17,8 @@ Inhaltliche Grundlage ist das Statement of Work „Claude Platform Training, Gov
 | `site/assets/brand/` | KAIROS-Logo ohne Claim, Favicon |
 | `site/assets/fonts/` | Source Sans 3 und Source Serif 4 (SIL Open Font License) |
 | `scripts/images.json` | Quellbilder (KI-generiert mit Higgsfield) |
+| `middleware.js` | Passwortschutz mit Login-Seite (EN/DE) |
+| `site/assets/public/` | Stil und Skript der Login-Seite |
 | `scripts/build.mjs` | Lädt die Bilder beim Build und erzeugt WebP in 800 und 1600 px |
 | `kit/grafitecture-credit/` | Grafitecture-Feld (Kit v1.2), steht auf der letzten Folie; CSS als letzter Abschnitt in `site.css`, Schnipsel DE/EN in `site/assets/grafitecture-credit.js` (erzeugt mit `python3 scripts/credit.py`) |
 
@@ -32,9 +34,13 @@ Inhaltliche Grundlage ist das Statement of Work „Claude Platform Training, Gov
 
 Die Seite öffnet immer auf Englisch; Deutsch über den Umschalter oder einen Link mit `?lang=de`. Pfeiltasten oder Bild-auf/ab blättern, `O` Übersicht, `F` Vollbild, `D`/`E` Sprache. Direktlinks: `/?lang=de#k4-wege`. Auf schmalen Bildschirmen wird das Feld von Jens Sattler unten angedockt.
 
+## Zugang
+
+`middleware.js` (Vercel Routing Middleware, Aufbau wie bei ECOWERTH Campus) zeigt ohne gültiges Cookie die Login-Seite (Status 401), auf Englisch, mit `?lang=de` auf Deutsch. Geschützt sind alle Inhalte und Bilder; frei bleiben nur Schriften, Logo/Favicon (`assets/brand`), die Login-Dateien (`assets/public`) und `robots.txt`. Das Passwort steht nur in der Umgebungsvariable `SITE_PASSWORD` im Vercel-Projekt (Production und Preview), nicht im Code; fehlt sie, bleibt die Seite gesperrt. Groß- und Kleinschreibung spielen keine Rolle. „Angemeldet bleiben“ hält 30 Tage, ohne Haken bis zum Schließen des Browsers. Abmelden: `/abmelden` oder der Link in der Übersicht. Nach einer Passwortänderung neu deployen. Ein geteiltes Passwort ist Sichtschutz, keine Benutzerverwaltung.
+
 ## Webseite
 
-Vercel-Projekt `kairos-ai-campus` im Team Grafitecture, verbunden mit diesem Repo. Jeder Push auf `main` veröffentlicht neu. Der Build (`npm run build`) lädt die Bilder und schreibt sie nach `site/assets/img/` (nicht im Repo). Fehlt ein Bild, bricht der Build ab und die vorherige Version bleibt online. Die Seite ist von Suchmaschinen ausgeschlossen und lädt im Browser nichts von fremden Servern.
+Vercel-Projekt `kairos-ai-campus` im Team Grafitecture, verbunden mit diesem Repo. Jeder Push auf `main` veröffentlicht neu. Der Build (`npm run build`) lädt die Bilder und schreibt sie nach `site/assets/img/` (nicht im Repo). Fehlt ein Bild, bricht der Build ab und die vorherige Version bleibt online. Die Seite ist passwortgeschützt, von Suchmaschinen ausgeschlossen und lädt im Browser nichts von fremden Servern.
 
 ## Hinweise
 

@@ -386,6 +386,7 @@ a:hover { color: var(--schiefer); }
 .overview a:hover { color: var(--kornblume-tief); }
 .overview .num { color: var(--schiefer-hell); font-variant-numeric: tabular-nums; }
 .overview__keys { font-size: .82rem; margin: 1.2rem 0 0; color: var(--schiefer-hell); }
+.overview__logout { margin: .6rem 0 0; font-size: .85rem; }
 
 /* ---------- Abschluss ---------- */
 .closing-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
